@@ -26,7 +26,7 @@ FROM ghcr.io/ublue-os/bluefin:stable
 # RUN rm /opt && mkdir /opt
 
 ### COPY ENCRYPTED PART INTO THE IMAGE
-COPY encrypted /
+COPY encrypted /encrypted/
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
