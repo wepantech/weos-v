@@ -28,6 +28,11 @@ FROM ghcr.io/ublue-os/bluefin:stable
 ### COPY ENCRYPTED PART INTO THE IMAGE
 COPY encrypted /encrypted/
 
+# Create a mountpoint folder for mounting the encrypted part
+
+RUN mkdir /encrypted/mountpoint
+
+
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
