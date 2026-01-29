@@ -19,4 +19,4 @@ WantedBy=multi-user.target
 EOF
 
 
-systemd enable startup-script.service
+systemctl enable startup-script.service
