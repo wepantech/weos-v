@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 
-tee /etc/systemd/startup-script.service <<EOF
+tee /usr/lib/systemd/system/startup-script.service <<EOF
 [Unit]
 Description=Mount encrypted part and run startup script after that
 After=network.target
